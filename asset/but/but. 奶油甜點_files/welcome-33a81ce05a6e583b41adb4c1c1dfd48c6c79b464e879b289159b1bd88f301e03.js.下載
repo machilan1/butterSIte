@@ -1,1 +1,0 @@
-function htmlEncode(t){return $("<div/>").text(t).html()}
