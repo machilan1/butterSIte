@@ -3,9 +3,6 @@ html::-webkit-scrollbar{display: none;}
 
 
 body{
-/* TWEAK AREA */
-    
-/* TWEAK AREA */
 
     margin: 0;
     padding: 0;
@@ -38,21 +35,29 @@ body{
     flex-direction: column;
     /* background-color: rgba(165, 42, 42, 0.315); */
 }
-.item1{
+.bar3{
+    padding: 2px 0px;
     height: 4.5px;
     margin: 17px;
     width: 108px;
     /* border-color: white; */
     background-color: white;
 }
+
+.icon-cart{
+
+}
+.icon-cart:hover{
+    background-color: rgb(97, 32, 94);
+}
+
 .right-widget{
     position: fixed;
     right:10px;
     width: 200px;
     height: 200px;
-    background-color: rgba(21, 141, 81, 0.479);
     top:285px;
-    right:109px
+    right:109px;
 }
 
 .cart-count{
@@ -72,13 +77,15 @@ body{
     font-size: 70px;
     top: -14px;
     left:22px
-   
 }
 .bag{
     fill: transparent;
     stroke: white;
     stroke-width: 1px;
 }
+
+
+
 .logo-area{
     position: relative;
     left: 30px;
@@ -87,11 +94,16 @@ body{
 }
 /* cart banner */
 .cart-banner{
+    opacity: 1;
+    z-index: 10;
     position: fixed;
     top:0;
+    right:-100vw;
     height: 100vh;
     width: 100vw;
     background-color: rgba(0, 0, 0, 0.534);
+    transition: 1s;
+    /* color: pink; */
 }
 .cart-banner-content{
     position: relative;
@@ -112,10 +124,11 @@ body{
     padding-bottom: 103px;
     margin-left: 120px;
     font-size: 100px;
-    letter-spacing: 3.4px;
+    letter-spacing: 3.8px;
 }
 
 .cart-line{
+    margin: 1px 0;
     align-self:center;
     background-color: rgb(0, 0, 0);
     height: 5px;
@@ -123,23 +136,30 @@ body{
 
 }
 .close-button{
+    right:100px;
+    top:-20px;
     position: relative;
-    margin-right: 248px;
-    margin-top: 44px;
+    height:160px;
+    width: 160px;
     font-size: 100px;
+    background-color: rgba(0, 255, 255, 0);
+}
+.close-button:hover{
+    cursor: pointer;
 }
 .crossbar{
-    position: relative;
+    position: absolute;
+    right: 0px;
+    top: 70px;
     width: 145px;
     height: 5px;
     background-color: rgb(0, 0, 0);
 }
 .bar1{
-    position: absolute;
     transform: rotate(45deg);
 }
 .bar2{
-    position: absolute;
+
     transform: rotate(135deg);
 }
 
@@ -154,8 +174,9 @@ body{
     
 }
 .price-total-tag{
-    transform:translate(0px ,-4px);
-    font-size: 80px;
+    transform:translate(4px ,-4px);
+    font-size: 78.9px;
+
     color: rgb(129, 129, 129);
 }
 .price-value{
@@ -164,7 +185,7 @@ body{
 }
 
 .cart-banner-footer{
-    margin-top: 300px;
+    margin-top: 290px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -185,7 +206,7 @@ body{
     margin-right: 25px;
     border :solid 6px rgb(0, 0, 0);
     font-size: 85px;
-    padding :27px 117px;
+    padding :28px 115px;
     display: inline-block;
 }
 
@@ -200,9 +221,9 @@ g{
 .b001{
 
     /* TWEAK AREA */
-    background-image: url(/asset/img//page1-1.jpg);
+    background-image: url(/asset/img/page1-1.jpg);
     background-size: cover;
-    background-position: center center;
+    /* background-position: 0px -140px */
     /* TWEAK AREA */
 }
 .b002{
